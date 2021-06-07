@@ -49,18 +49,15 @@ const Investiments = ({ data }:SlugProps) => {
         {data.map(invest => {
           return (
             <tr key={invest.id}>
-              <td >
-{format(invest.date, 'dd-MMM-yyyy', {
-  locale: ptBR
-})}</td>
               <td>
-                    {Math.fround(invest.value).toFixed(2)}
+                {format(invest.date, 'MMM-yyyy', {
+                  locale: ptBR
+                })}
               </td>
+              <td>{Math.fround(invest.value).toFixed(2)}</td>
 
-              <td>
-              {`${Math.fround(invest.diff).toFixed(2)}%`}
-              </td>
-              </tr>
+              <td>{`${Math.fround(invest.diff).toFixed(2)}%`}</td>
+            </tr>
           )
         })}
       </tbody>
