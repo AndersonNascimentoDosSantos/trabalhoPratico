@@ -1,0 +1,61 @@
+.allInvestiments{
+
+
+table{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    thead{
+    background-color: aqua;
+       flex-direction: row;
+       tr{
+        justify-content: space-between;
+           td{
+            justify-content: space-between;
+            padding: 1rem;
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+    }
+    tbody{
+        display: flex;
+        flex-direction: column;
+        
+        
+    tr{
+        display: inline-block;
+        background-color: rgb(185, 192, 170);
+        border: 4px solid "#000";
+        border-radius: 1rem;
+        margin: 1rem;
+        align-content: space-between;
+                
+        td{
+            padding:1rem ;
+            align-items: center;
+            
+            a{
+                align-self: center;
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+        
+    }
+}
+}
+}
+.row{
+    background-color: rgb(185, 192, 170);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1rem;
+    margin: 0.2rem;
+
+}
